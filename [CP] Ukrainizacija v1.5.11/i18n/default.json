@@ -1,0 +1,55 @@
+{
+    /*********
+    ** Generic Mod Config Menu UI
+    *********/
+
+    // Mod's Name
+    "config.title": "Ukrainizacija's Mod Settings",
+
+    // Mod's Sections
+    "config.section.Appearance.name": "Appearance",
+    "config.section.Behavior.name": "Behavior",
+
+    // Time Format
+    "config.ModTimeFormat.name": "Game Time Format",
+    "config.ModTimeFormat.description": "Changes game time format to 12 hours or 24 hours",
+    "config.ModTimeFormat.values.24Hours": "24 Hours",
+    "config.ModTimeFormat.values.12Hours": "12 Hours",
+	
+	// Localized Textures
+	"config.ModLocalizedTextures.name": "Localized Textures",
+	"config.ModLocalizedTextures.description": "Turns off or on localized textures",
+	
+	// Fonts
+    "config.ModFont.name": "Font",
+	"config.ModFont.description": "Changes mod's font between new and old",
+	"config.ModFont.values.New": "New",
+	"config.ModFont.values.Mixed1": "Mixed #1",
+	"config.ModFont.values.Mixed2": "Mixed #2",
+	"config.ModFont.values.Old": "Old",
+	"config.ModFont.values.SegoePrint": "Segoe Print",
+	
+	// Dwarf or Karlyk
+	"config.DwarfTransaltion.name": "Translation of Dwarf",
+	"config.DwarfTransaltion.description": "The word that the game will use for the English \"Dwarf\"",
+	"config.DwarfTransaltion.values.Karlyk": "Karlyk",
+	"config.DwarfTransaltion.values.Dwarf": "Dwarf",
+	
+    // Mod Current OS
+    "config.ModCurrentOS.name": "Mod OS Mode",
+    "config.ModCurrentOS.description": "Changes mod's OS mode to Android or PC (Windows, MacOS, Linux)",
+    "config.ModCurrentOS.values.Android": "Android",
+    "config.ModCurrentOS.values.PC": "PC",
+
+    // Mod Status
+    "config.ModStatus.name": "Mod Status",
+    "config.ModStatus.description": "Changes mod's status",
+    "config.ModStatus.values.ON": "On",
+    "config.ModStatus.values.OFF": "Off",
+	
+	// Custom Achievements
+	"ach_beatthetranslatedgame": "The Game's Kinets",
+	"ach_stardewukrtranslationdiscovered": "Star Dew Valley",
+	"ach_beatthetranslatedgame_description": "Beat the game with Ukrainizacija.\n\n(Danielle Tlumach: I'm impressed!)",
+	"ach_stardewukrtranslationdiscovered_description": "Play Stardew Valley with the Ukrainizacija"
+}

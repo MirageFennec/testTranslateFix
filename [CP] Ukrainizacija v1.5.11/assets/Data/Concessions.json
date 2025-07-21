@@ -1,0 +1,264 @@
+[
+  {
+    "ID": 0,
+    "Name": "Cotton Candy",
+    "DisplayName": "Солодка вата",
+    "Description": "Велика, рожева хмарка пряденого цукру.",
+    "Price": 50,
+    "ItemTags": [
+      "Sweet",
+      "Candy"
+    ]
+  },
+  {
+    "ID": 1,
+    "Name": "Jasmine Tea",
+    "DisplayName": "Жасминовий чай",
+    "Description": "Зелений чай з ароматними квітами жасмину.",
+    "Price": 50,
+    "ItemTags": [
+      "Drink",
+      "Hot",
+      "Healthy"
+    ]
+  },
+  {
+    "ID": 2,
+    "Name": "Joja Cola",
+    "DisplayName": "Joja Кола",
+    "Description": "Дуже великий кухоль відомої содової Joja.",
+    "Price": 40,
+    "ItemTags": [
+      "Drink",
+      "Cold",
+      "Joja"
+    ]
+  },
+  {
+    "ID": 3,
+    "Name": "Sour Slimes",
+    "DisplayName": "Кислі слимаки",
+    "Description": "Крихітні клейкі слимаки різних кольорів. Вони посипані дуже кислим порошком.",
+    "Price": 80,
+    "ItemTags": [
+      "Sour",
+      "Candy"
+    ]
+  },
+  {
+    "ID": 4,
+    "Name": "Personal Pizza",
+    "DisplayName": "Маленька піца",
+    "Description": "Піца досить маленька, тому її вистачить лише на перекус.",
+    "Price": 150,
+    "ItemTags": [
+      "Hot",
+      "Fatty"
+    ]
+  },
+  {
+    "ID": 5,
+    "Name": "Nachos",
+    "DisplayName": "Начос",
+    "Description": "Липкий, пряний сир поверх свіжообсмажених чипсів з тортильї.",
+    "Price": 100,
+    "ItemTags": [
+      "Hot",
+      "Salty",
+      "Fatty"
+    ]
+  },
+  {
+    "ID": 6,
+    "Name": "Salmon Burger",
+    "DisplayName": "Бургер з лососем",
+    "Description": "Товстий шматок лосося на злегка підсмаженій булочці з кунжутом.",
+    "Price": 150,
+    "ItemTags": [
+      "Sandwich",
+      "Burger"
+    ]
+  },
+  {
+    "ID": 7,
+    "Name": "Ice Cream Sandwich",
+    "DisplayName": "Сандвіч-морозиво",
+    "Description": "Ванільне морозиво між двома шоколадними печивами.",
+    "Price": 150,
+    "ItemTags": [
+      "Sandwich",
+      "Sweet",
+      "Cold"
+    ]
+  },
+  {
+    "ID": 8,
+    "Name": "Popcorn",
+    "DisplayName": "Попкорн",
+    "Description": "Смажені зерна кукурудзи, злегка присипані сіллю і политі вершковим маслом.",
+    "Price": 120,
+    "ItemTags": [
+      "Hot",
+      "Salty"
+    ]
+  },
+  {
+    "ID": 9,
+    "Name": "Fries",
+    "DisplayName": "Картопля фрі",
+    "Description": "Тонкі шматочки картоплі, смажені у фритюрі, а потім злегка посолені.",
+    "Price": 100,
+    "ItemTags": [
+      "Hot",
+      "Salty",
+      "Fatty"
+    ]
+  },
+  {
+    "ID": 10,
+    "Name": "Chocolate Popcorn",
+    "DisplayName": "Шоколадний попкорн",
+    "Description": "Це звичайний попкорн... у шоколаді.",
+    "Price": 130,
+    "ItemTags": [
+      "Hot",
+      "Sweet"
+    ]
+  },
+  {
+    "ID": 11,
+    "Name": "Black Licorice",
+    "DisplayName": "Чорна локриця",
+    "Description": "Жувальна цукерка з інтенсивним, пікантним смаком.",
+    "Price": 25,
+    "ItemTags": null
+  },
+  {
+    "ID": 12,
+    "Name": "Star Cookie",
+    "DisplayName": "Печиво \"Зірка\".",
+    "Description": "Зіркоподібне пісочне печиво з райдужною посипкою.",
+    "Price": 150,
+    "ItemTags": [
+      "Sweet"
+    ]
+  },
+  {
+    "ID": 13,
+    "Name": "Jawbreaker",
+    "DisplayName": "Зуболом",
+    "Description": "Велика, тверда цукерка, якої вистачить на весь фільм!",
+    "Price": 250,
+    "ItemTags": [
+      "Sweet",
+      "Candy"
+    ]
+  },
+  {
+    "ID": 14,
+    "Name": "Salted Peanuts",
+    "DisplayName": "Солоний арахіс",
+    "Description": "Класичні солоні смаколики.",
+    "Price": 120,
+    "ItemTags": [
+      "Salty"
+    ]
+  },
+  {
+    "ID": 15,
+    "Name": "Hummus Snack Pack",
+    "DisplayName": "Набір закусок з хумусом",
+    "Description": "Хрусткий і корисний.",
+    "Price": 90,
+    "ItemTags": [
+      "Healthy"
+    ]
+  },
+  {
+    "ID": 16,
+    "Name": "Kale Smoothie",
+    "DisplayName": "Смузі з кейлу",
+    "Description": "Наповнене вітамінами та клітковиною.",
+    "Price": 120,
+    "ItemTags": [
+      "Drink",
+      "Healthy"
+    ]
+  },
+  {
+    "ID": 17,
+    "Name": "Apple Slices",
+    "DisplayName": "Шматочки яблука",
+    "Description": "Хрусткі й солодкі маленькі шматочки.",
+    "Price": 100,
+    "ItemTags": [
+      "Sweet",
+      "Healthy"
+    ]
+  },
+  {
+    "ID": 18,
+    "Name": "Panzanella Salad",
+    "DisplayName": "Салат Панцанела",
+    "Description": "Літній салат з хліба та помідорів.",
+    "Price": 200,
+    "ItemTags": [
+      "Gourmet",
+      "Healthy"
+    ]
+  },
+  {
+    "ID": 19,
+    "Name": "Truffle Popcorn",
+    "DisplayName": "Трюфельний попкорн",
+    "Description": "Попкорн високого класу, посипаний трюфельною сіллю.",
+    "Price": 180,
+    "ItemTags": [
+      "Gourmet",
+      "Salty"
+    ]
+  },
+  {
+    "ID": 20,
+    "Name": "Cappuccino Mousse Cake",
+    "DisplayName": "Мусовий торт з капучино",
+    "Description": "Маленький шоколадний торт, глазурований мусом з капучино.",
+    "Price": 220,
+    "ItemTags": [
+      "Sweet",
+      "Gourmet"
+    ]
+  },
+  {
+    "ID": 21,
+    "Name": "JojaCorn",
+    "DisplayName": "JojaКорн",
+    "Description": "Запатентована кукурудзяна їжа Joja, полита великою кількістю \"вершкового соусу\".",
+    "Price": 10,
+    "ItemTags": [
+      "Joja"
+    ]
+  },
+  {
+    "ID": 22,
+    "Name": "Stardrop Sorbet",
+    "DisplayName": "Зорекрапельний сорбет",
+    "Description": "Одна крапля есенції зоряної краплі перетворює цей сорбет на надзвичайну страву.",
+    "Price": 1250,
+    "ItemTags": [
+      "Sweet",
+      "Gourmet"
+    ]
+  },
+  {
+    "ID": 23,
+    "Name": "Rock Candy",
+    "DisplayName": "Льодяник",
+    "Description": "Ароматизовані кристали цукру, що прикріплені до зручної палички.",
+    "Price": 90,
+    "ItemTags": [
+      "Sweet",
+      "Candy"
+    ]
+  }
+]

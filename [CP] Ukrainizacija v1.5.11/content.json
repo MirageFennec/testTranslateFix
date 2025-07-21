@@ -1,0 +1,1089 @@
+{
+    "Format": "1.27.0",
+	// Mod's Config
+    "ConfigSchema": {
+        "ModTimeFormat": {
+            "AllowValues": "24Hours, 12Hours",
+            "Default": "24Hours",
+            "Description": "Зміна формату часу в грі на 12-ти або 24-х годинний (за замовчуванням - 24-х годинний)",
+			"Section": "Appearance"
+        },
+		"ModLocalizedTextures": {
+			"AllowValues": "true, false",
+            "Default": true,
+			"Description": "Вимкнення або ввімкнення локалізованих текстур у грі (за замовчуванням - увімкнено)",
+			"Section": "Appearance"
+		},
+		"ModFont": {
+			"AllowValues": "New, Mixed1, Mixed2, Old, SegoePrint",
+			"Default": "New",
+			"Description": "Зміна шрифта в грі на новий або старий (за замовчуванням - новий)",
+			"Section": "Appearance"
+		},
+		"DwarfTransaltion": {
+			"AllowValues": "Karlyk, Dwarf",
+			"Default": "Karlyk",
+			"Description": "Слово, що використовуватиме гра на позначення англійського \"Dwarf\" (за замовчуванням - \"Карлик\")",
+			"Section": "Appearance"
+		},
+        "ModCurrentOS": {
+            "AllowValues": "PC, Android",
+            "Default": "PC",
+            "Description": "Зміна режиму моду для роботи на системі Android або на комп'ютері (Windows, MacOS та Linux) (за замовчуванням - для комп'ютера)",
+			"Section": "Behavior"
+        },
+        "ModStatus": {
+            "AllowValues": "ON, OFF",
+            "Default": "ON",
+            "Description": "Зміна статусу моду - увімкнення або вимкнення для роботи інших мовних модів (за замовчуванням - увімкнено)",
+			"Section": "Behavior"
+        }
+    },
+
+// ({{ModUserName}})
+
+    "Changes": [
+	// Mod's Additional Language
+	    {
+            "Action": "EditData",
+            "Target": "Data/AdditionalLanguages",
+            "Entries": {
+                "Pereclaw.ukrainizacija": {
+                    "ID": "Pereclaw.ukrainizacija",
+                    "LanguageCode": "uk",
+                    "ButtonTexture": "{{InternalAssetKey: assets/Button}}",
+                    "UseLatinFont": true,
+                    "UseGenderedCharacterTranslations": true,
+                    "NumberComma": ",",
+                    "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockDateFormat": "[DAY_OF_WEEK]. [DAY_OF_MONTH]"
+                }
+            },
+            "When": { "ModTimeFormat": "24Hours", "ModFont": "New", "ModStatus": "ON" }
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/AdditionalLanguages",
+            "Entries": {
+                "Pereclaw.ukrainizacija": {
+                    "ID": "Pereclaw.ukrainizacija",
+                    "LanguageCode": "uk",
+                    "ButtonTexture": "{{InternalAssetKey: assets/Button}}",
+                    "UseLatinFont": true,
+                    "UseGenderedCharacterTranslations": true,
+                    "NumberComma": ",",
+                    "TimeFormat": "[HOURS_12]:[MINUTES] [AM_PM]",
+                    "ClockTimeFormat": "[HOURS_12]:[MINUTES] [AM_PM]",
+                    "ClockDateFormat": "[DAY_OF_WEEK]. [DAY_OF_MONTH]"
+                }
+            },
+            "When": { "ModTimeFormat": "12Hours", "ModFont": "New", "ModStatus": "ON" }
+        },
+	    {
+            "Action": "EditData",
+            "Target": "Data/AdditionalLanguages",
+            "Entries": {
+                "Pereclaw.ukrainizacija": {
+                    "ID": "Pereclaw.ukrainizacija",
+                    "LanguageCode": "uk",
+                    "ButtonTexture": "{{InternalAssetKey: assets/Button}}",
+                    "UseLatinFont": true,
+                    "UseGenderedCharacterTranslations": true,
+                    "NumberComma": ",",
+                    "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockDateFormat": "[DAY_OF_WEEK]. [DAY_OF_MONTH]"
+                }
+            },
+            "When": { "ModTimeFormat": "24Hours", "ModFont": "Mixed1", "ModStatus": "ON" }
+        },
+		{
+			"Action": "EditData",
+            "Target": "Data/AdditionalLanguages",
+            "Entries": {
+                "Pereclaw.ukrainizacija": {
+                    "ID": "Pereclaw.ukrainizacija",
+                    "LanguageCode": "uk",
+                    "ButtonTexture": "{{InternalAssetKey: assets/Button}}",
+                    "UseLatinFont": true,
+                    "UseGenderedCharacterTranslations": true,
+                    "NumberComma": ",",
+                    "TimeFormat": "[HOURS_12]:[MINUTES] [AM_PM]",
+                    "ClockTimeFormat": "[HOURS_12]:[MINUTES] [AM_PM]",
+                    "ClockDateFormat": "[DAY_OF_WEEK]. [DAY_OF_MONTH]"
+                }
+            },
+            "When": { "ModTimeFormat": "12Hours", "ModFont": "Mixed1", "ModStatus": "ON" }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AdditionalLanguages",
+            "Entries": {
+                "Pereclaw.ukrainizacija": {
+                    "ID": "Pereclaw.ukrainizacija",
+                    "LanguageCode": "uk",
+                    "ButtonTexture": "{{InternalAssetKey: assets/Button}}",
+                    "UseLatinFont": false,
+					"FontFile": "Fonts/Ukrainian",
+					"FontPixelZoom": 3.3,
+					"FontApplyYOffset": true,
+                    "UseGenderedCharacterTranslations": true,
+                    "NumberComma": ",",
+                    "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockDateFormat": "[DAY_OF_WEEK]. [DAY_OF_MONTH]"
+                }
+            },
+            "When": { "ModTimeFormat": "24Hours", "ModFont": "Mixed2", "ModStatus": "ON" }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AdditionalLanguages",
+            "Entries": {
+                "Pereclaw.ukrainizacija": {
+                    "ID": "Pereclaw.ukrainizacija",
+                    "LanguageCode": "uk",
+                    "ButtonTexture": "{{InternalAssetKey: assets/Button}}",
+                    "UseLatinFont": false,
+					"FontFile": "Fonts/Ukrainian",
+					"FontPixelZoom": 3.3,
+					"FontApplyYOffset": true,
+                    "UseGenderedCharacterTranslations": true,
+                    "NumberComma": ",",
+                    "TimeFormat": "[HOURS_12]:[MINUTES] [AM_PM]",
+                    "ClockTimeFormat": "[HOURS_12]:[MINUTES] [AM_PM]",
+                    "ClockDateFormat": "[DAY_OF_WEEK]. [DAY_OF_MONTH]"
+                }
+            },
+            "When": { "ModTimeFormat": "12Hours", "ModFont": "Mixed2", "ModStatus": "ON" }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AdditionalLanguages",
+            "Entries": {
+                "Pereclaw.ukrainizacija": {
+                    "ID": "Pereclaw.ukrainizacija",
+                    "LanguageCode": "uk",
+                    "ButtonTexture": "{{InternalAssetKey: assets/Button}}",
+                    "UseLatinFont": false,
+					"FontFile": "Fonts/Ukrainian",
+					"FontPixelZoom": 3.3,
+					"FontApplyYOffset": true,
+                    "UseGenderedCharacterTranslations": true,
+                    "NumberComma": ",",
+                    "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockDateFormat": "[DAY_OF_WEEK]. [DAY_OF_MONTH]"
+                }
+            },
+            "When": { "ModTimeFormat": "24Hours", "ModFont": "Old", "ModStatus": "ON" }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AdditionalLanguages",
+            "Entries": {
+                "Pereclaw.ukrainizacija": {
+                    "ID": "Pereclaw.ukrainizacija",
+                    "LanguageCode": "uk",
+                    "ButtonTexture": "{{InternalAssetKey: assets/Button}}",
+                    "UseLatinFont": false,
+					"FontFile": "Fonts/Ukrainian",
+					"FontPixelZoom": 3.3,
+					"FontApplyYOffset": true,
+                    "UseGenderedCharacterTranslations": true,
+                    "NumberComma": ",",
+                    "TimeFormat": "[HOURS_12]:[MINUTES] [AM_PM]",
+                    "ClockTimeFormat": "[HOURS_12]:[MINUTES] [AM_PM]",
+                    "ClockDateFormat": "[DAY_OF_WEEK]. [DAY_OF_MONTH]"
+                }
+            },
+            "When": { "ModTimeFormat": "12Hours", "ModFont": "Old", "ModStatus": "ON" }
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/AdditionalLanguages",
+            "Entries": {
+                "Pereclaw.ukrainizacija": {
+                    "ID": "Pereclaw.ukrainizacija",
+                    "LanguageCode": "uk",
+                    "ButtonTexture": "{{InternalAssetKey: assets/Button}}",
+                    "UseLatinFont": false,
+					"FontFile": "{{InternalAssetKey: assets/Fonts/SegoePrint/Fonts/Ukrainian.fnt}}",
+					"FontPixelZoom": 1,
+					"FontApplyYOffset": true,
+                    "UseGenderedCharacterTranslations": true,
+                    "NumberComma": ",",
+                    "TimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockTimeFormat": "[HOURS_24_00]:[MINUTES]",
+                    "ClockDateFormat": "[DAY_OF_WEEK]. [DAY_OF_MONTH]"
+                }
+            },
+            "When": { "ModTimeFormat": "24Hours", "ModFont": "SegoePrint", "ModStatus": "ON" }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/AdditionalLanguages",
+            "Entries": {
+                "Pereclaw.ukrainizacija": {
+                    "ID": "Pereclaw.ukrainizacija",
+                    "LanguageCode": "uk",
+                    "ButtonTexture": "{{InternalAssetKey: assets/Button}}",
+                    "UseLatinFont": false,
+					"FontFile": "{{InternalAssetKey: assets/Fonts/SegoePrint/Fonts/Ukrainian.fnt}}",
+					"FontPixelZoom": 1,
+					"FontApplyYOffset": true,
+                    "UseGenderedCharacterTranslations": true,
+                    "NumberComma": ",",
+                    "TimeFormat": "[HOURS_12]:[MINUTES] [AM_PM]",
+                    "ClockTimeFormat": "[HOURS_12]:[MINUTES] [AM_PM]",
+                    "ClockDateFormat": "[DAY_OF_WEEK]. [DAY_OF_MONTH]"
+                }
+            },
+            "When": { "ModTimeFormat": "12Hours", "ModFont": "SegoePrint", "ModStatus": "ON" }
+        },
+		
+		
+		// Mod's Language Button
+        {
+            "Action": "Load",
+            "Target": "{{InternalAssetKey: assets/Button}}",
+            "FromFile": "assets/Button.png",
+            "When": { "HasMod: |contains=Maraluna.OvergrownFloweryInterface": false, "ModStatus": "ON" }
+        },
+		
+		
+        // Mod's Fonts
+		// New
+		{
+		    "LogName": "Fonts",
+            "Action": "Load",
+            "Target": "LooseSprites/font_bold, LooseSprites/font_colored",
+            "FromFile": "assets/{{Target}}.png",
+            "When": { "ModFont": "New", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Fonts",
+            "Action": "Load",
+            "Target": "Fonts/SmallFont, Fonts/SpriteFont1",
+            "FromFile": "assets/Fonts/New/{{Target}}.xnb",
+            "When": { "ModFont": "New", "ModStatus": "ON", "Language": "uk" }
+        },
+		// Old
+	    {
+			"LogName": "Fonts",
+            "Action": "Load",
+            "Target": "Fonts/Ukrainian",
+            "FromFile": "assets/{{Target}}.fnt",
+            "When": { "ModFont": "Old", "ModStatus": "ON" }
+        },
+        {
+			"LogName": "Fonts",
+            "Action": "Load",
+            "Target": "Fonts/Ukrainian_0",
+            "FromFile": "assets/{{Target}}.png",
+            "When": { "ModFont": "Old", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Fonts",
+            "Action": "Load",
+            "Target": "Fonts/SmallFont, Fonts/SpriteFont1",
+            "FromFile": "assets/Fonts/Old/{{Target}}.xnb",
+            "When": { "ModFont": "Old", "ModStatus": "ON", "Language": "uk" }
+        },
+		// Mixed 1
+		{
+		    "LogName": "Fonts",
+            "Action": "Load",
+            "Target": "LooseSprites/font_bold, LooseSprites/font_colored",
+            "FromFile": "assets/{{Target}}.png",
+            "When": { "ModFont": "Mixed1", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Fonts",
+            "Action": "Load",
+            "Target": "Fonts/SmallFont, Fonts/SpriteFont1",
+            "FromFile": "assets/Fonts/Old/{{Target}}.xnb",
+            "When": { "ModFont": "Mixed1", "ModStatus": "ON", "Language": "uk" }
+        },
+		// Mixed 2
+	    {
+			"LogName": "Fonts",
+            "Action": "Load",
+            "Target": "Fonts/Ukrainian",
+            "FromFile": "assets/{{Target}}.fnt",
+            "When": { "ModFont": "Mixed2", "ModStatus": "ON" }
+        },
+        {
+			"LogName": "Fonts",
+            "Action": "Load",
+            "Target": "Fonts/Ukrainian_0",
+            "FromFile": "assets/{{Target}}.png",
+            "When": { "ModFont": "Mixed2", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Fonts",
+            "Action": "Load",
+            "Target": "Fonts/SmallFont, Fonts/SpriteFont1",
+            "FromFile": "assets/Fonts/New/{{Target}}.xnb",
+            "When": { "ModFont": "Mixed2", "ModStatus": "ON", "Language": "uk" }
+        },
+		// Segoe Print
+		{
+			"LogName": "Fonts",
+            "Action": "Load",
+            "Target": "Fonts/Ukrainian",
+            "FromFile": "assets/Fonts/SegoePrint/{{Target}}.fnt",
+            "When": { "ModFont": "SegoePrint", "ModStatus": "ON", "Language": "uk" }
+        },
+        {
+			"LogName": "Fonts",
+            "Action": "Load",
+            "Target": "Fonts/Ukrainian_0, Fonts/Ukrainian_1",
+            "FromFile": "assets/Fonts/SegoePrint/{{Target}}.png",
+            "When": { "ModFont": "SegoePrint", "ModStatus": "ON", "Language": "uk" }
+        },
+		{
+            "LogName": "Fonts",
+            "Action": "Load",
+            "Target": "Fonts/SmallFont, Fonts/SpriteFont1",
+            "FromFile": "assets/Fonts/SegoePrint/{{Target}}.xnb",
+            "When": { "ModFont": "SegoePrint", "ModStatus": "ON", "Language": "uk" }
+        },
+		
+		
+		// Text Translation
+        {
+            "LogName": "Dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Abigail, Characters/Dialogue/Alex, Characters/Dialogue/Caroline, Characters/Dialogue/Clint, Characters/Dialogue/Demetrius, Characters/Dialogue/Dwarf, Characters/Dialogue/Elliott, Characters/Dialogue/Emily, Characters/Dialogue/Evelyn, Characters/Dialogue/George, Characters/Dialogue/Gil, Characters/Dialogue/Gus, Characters/Dialogue/Haley, Characters/Dialogue/Harvey, Characters/Dialogue/Jas, Characters/Dialogue/Jodi, Characters/Dialogue/Kent, Characters/Dialogue/Krobus, Characters/Dialogue/Leah, Characters/Dialogue/Lewis, Characters/Dialogue/Linus, Characters/Dialogue/Marnie, Characters/Dialogue/MarriageDialogue, Characters/Dialogue/MarriageDialogueAbigail, Characters/Dialogue/MarriageDialogueAlex, Characters/Dialogue/MarriageDialogueElliott, Characters/Dialogue/MarriageDialogueEmily, Characters/Dialogue/MarriageDialogueHaley, Characters/Dialogue/MarriageDialogueHarvey, Characters/Dialogue/MarriageDialogueKrobus, Characters/Dialogue/MarriageDialogueLeah, Characters/Dialogue/MarriageDialogueMaru, Characters/Dialogue/MarriageDialoguePenny, Characters/Dialogue/MarriageDialogueSam, Characters/Dialogue/MarriageDialogueSebastian, Characters/Dialogue/MarriageDialogueShane, Characters/Dialogue/Maru, Characters/Dialogue/Mister Qi, Characters/Dialogue/Pam, Characters/Dialogue/Penny, Characters/Dialogue/Pierre, Characters/Dialogue/rainy, Characters/Dialogue/Robin, Characters/Dialogue/Sam, Characters/Dialogue/Sandy, Characters/Dialogue/Sebastian, Characters/Dialogue/Shane, Characters/Dialogue/Vincent, Characters/Dialogue/Willy, Characters/Dialogue/Wizard, Characters/Dialogue/Leo, Characters/Dialogue/LeoMainland",
+            "FromFile": "assets/{{Target}}.json",
+            "When": { "Language": "uk", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Events",
+            "Action": "Load",
+            "Target": "Data/Events/AbandonedJojaMart, Data/Events/AnimalShop, Data/Events/ArchaeologyHouse, Data/Events/Backwoods, Data/Events/BathHouse_Pool, Data/Events/Beach, Data/Events/BusStop, Data/Events/CommunityCenter, Data/Events/ElliottHouse, Data/Events/Farm, Data/Events/FarmHouse, Data/Events/Forest, Data/Events/HaleyHouse, Data/Events/HarveyRoom, Data/Events/Hospital, Data/Events/JoshHouse, Data/Events/LeahHouse, Data/Events/ManorHouse, Data/Events/Mine, Data/Events/Mountain, Data/Events/Railroad, Data/Events/Saloon, Data/Events/SamHouse, Data/Events/SandyHouse, Data/Events/ScienceHouse, Data/Events/SebastianRoom, Data/Events/SeedShop, Data/Events/Sewer, Data/Events/Sunroom, Data/Events/Temp, Data/Events/Tent, Data/Events/Town, Data/Events/Trailer, Data/Events/Trailer_big, Data/Events/WizardHouse, Data/Events/Woods, Data/Events/BoatTunnel, Data/Events/IslandHut, Data/Events/IslandNorth, Data/Events/IslandSouth, Data/Events/IslandWest, Data/Events/QiNutRoom, Data/Events/FishShop",
+            "FromFile": "assets/{{Target}}.json",
+            "When": { "Language": "uk", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Festivals",
+            "Action": "Load",
+            "Target": "Data/Festivals/fall16, Data/Festivals/fall27, Data/Festivals/FestivalDates, Data/Festivals/spring13, Data/Festivals/spring24, Data/Festivals/summer11, Data/Festivals/summer28, Data/Festivals/winter25, Data/Festivals/winter8",
+            "FromFile": "assets/{{Target}}.json",
+            "When": { "Language": "uk", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "TV Channels",
+            "Action": "Load",
+            "Target": "Data/TV/CookingChannel, Data/TV/InterviewShow, Data/TV/TipChannel",
+            "FromFile": "assets/{{Target}}.json",
+            "When": { "Language": "uk", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Various Data",
+            "Action": "Load",
+            "Target": "Data/Achievements, Data/BigCraftablesInformation, Data/Blueprints, Data/Boots, Data/ClothingInformation, Data/Concessions, Data/CookingRecipes, Data/CraftingRecipes, Data/EngagementDialogue, Data/ExtraDialogue, Data/FarmAnimals, Data/Fish, Data/Furniture, Data/hats, Data/mail, Data/Monsters, Data/Movies, Data/NPCDispositions, Data/NPCGiftTastes, Data/ObjectInformation, Data/PaintData, Data/Quests, Data/SecretNotes, Data/weapons",
+            "FromFile": "assets/{{Target}}.json",
+            "When": { "Language": "uk", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Various Data",
+            "Action": "Load",
+            "Target": "Data/MoviesReactions",
+            "FromFile": "assets/{{Target}}.json",
+            "When": { "Language": "uk", "DwarfTransaltion": "Karlyk", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Schedule Strings",
+            "Action": "Load",
+            "Target": "Strings/schedules/Abigail, Strings/schedules/Alex, Strings/schedules/Sandy, Strings/schedules/Caroline, Strings/schedules/Clint, Strings/schedules/Demetrius, Strings/schedules/Elliott, Strings/schedules/Emily, Strings/schedules/Evelyn, Strings/schedules/George, Strings/schedules/Gus, Strings/schedules/Haley, Strings/schedules/Harvey, Strings/schedules/Jas, Strings/schedules/Jodi, Strings/schedules/Leah, Strings/schedules/Lewis, Strings/schedules/Linus, Strings/schedules/Marnie, Strings/schedules/Maru, Strings/schedules/Pam, Strings/schedules/Penny, Strings/schedules/Pierre, Strings/schedules/Robin, Strings/schedules/Sam, Strings/schedules/Sebastian, Strings/schedules/Shane, Strings/schedules/Vincent, Strings/schedules/Willy, Strings/schedules/Leo",
+            "FromFile": "assets/{{Target}}.json",
+            "When": { "Language": "uk", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Other Strings",
+            "Action": "Load",
+            "Target": "Strings/animationDescriptions, Strings/Buildings, Strings/Characters, Strings/Events, Strings/FarmAnimals, Strings/Lexicon, Strings/Locations, Strings/Notes, Strings/NPCNames, Strings/Objects, Strings/Quests, Strings/SpeechBubbles, Strings/StringsFromMaps, Strings/UI, Strings/BundleNames, Strings/EnchantmentNames, Strings/SpecialOrderStrings, Strings/StringsFromCSFiles",
+            "FromFile": "assets/{{Target}}.json",
+            "When": { "Language": "uk", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Credits",
+            "Action": "Load",
+            "Target": "Strings/credits",
+            "FromFile": "assets/{{Target}}.json",
+            "When": { "Language": "uk", "ModStatus": "ON" }
+        },
+		
+		
+        // Texture Translation
+        {
+            "LogName": "Loose Sprites",
+            "Action": "Load",
+            "Target": "LooseSprites/Billboard, LooseSprites/Concessions, LooseSprites/ControllerMaps, LooseSprites/Cursors, LooseSprites/CraneGame, LooseSprites/EmoteMenu, LooseSprites/JojaCDForm, LooseSprites/JunimoNote, LooseSprites/Movies, LooseSprites/PlayerStatusList, LooseSprites/skillTitles",
+            "FromFile": "assets/{{Target}}.png",
+            "When": { "Language": "uk", "ModLocalizedTextures": true, "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Loose Sprites for Android",
+            "Action": "Load",
+            "Target": "LooseSprites/MobileAtlas_manually_made",
+            "FromFile": "assets/{{Target}}.xnb",
+            "When": { "Language": "uk", "ModLocalizedTextures": true, "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Maps",
+            "Action": "Load",
+            "Target": "Maps/bathhouse_tiles, Maps/coopTiles, Maps/DesertTiles, Maps/fall_beach, Maps/fall_outdoorsTileSheet, Maps/fall_town, Maps/Festivals, Maps/MovieTheater_TileSheet, Maps/MovieTheaterJoja_TileSheet, Maps/samshowtiles, Maps/spring_beach, Maps/spring_outdoorsTileSheet, Maps/spring_town, Maps/springobjects, Maps/stadium_tiles, Maps/summer_beach, Maps/summer_outdoorsTileSheet, Maps/summer_town, Maps/TownIndoors, Maps/townInterior, Maps/winter_beach, Maps/winter_outdoorsTileSheet, Maps/winter_town",
+            "FromFile": "assets/{{Target}}.png",
+            "When": { "Language": "uk", "ModLocalizedTextures": true, "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Minigames",
+            "Action": "Load",
+            "Target": "Minigames/Intro, Minigames/jojacorps, Minigames/TitleButtons",
+            "FromFile": "assets/{{Target}}.png",
+            "When": { "Language": "uk", "ModLocalizedTextures": true, "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Tilesheets",
+            "Action": "Load",
+            "Target": "TileSheets/emotes, TileSheets/furniture",
+            "FromFile": "assets/{{Target}}.png",
+            "When": { "Language": "uk", "ModLocalizedTextures": true, "ModStatus": "ON" }
+        },
+		
+		
+		
+	// Specials
+	
+	
+		// Junimo Font
+        {
+            "LogName": "Various Data",
+            "Action": "Load",
+            "Target": "Data/Bundles",
+            "FromFile": "assets/{{Target}}.json",
+            "When": { "Language": "uk", "HasFlag": "canReadJunimoText", "ModStatus": "ON" }
+        },
+	    {
+            "LogName": "Junimo Font",
+            "Action": "EditData",
+            "Target": "Strings/Locations",
+            "Entries": {
+                "CommunityCenter_AreaName_CraftsRoom": "Реміснича кімната"
+            },
+            "When": { "Language": "uk", "HasSeenEvent": 112, "ModStatus": "ON" }
+        },
+		
+		
+		// SafaryGuy's Name
+		{
+            "LogName": "SafaryGuy's Name",
+            "Action": "EditData",
+            "Target": "Strings/NPCNames",
+            "Entries": {
+               "???": "Проф. Равличко"
+           },
+            "When": { "Language": "uk", "HasSeenEvent": -1, "ModStatus": "ON" }
+        },
+		
+		
+		// Translation of Dwarf
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Dwarf",
+            "Entries": {
+               "Fri": "Ти ніколи раніше не бачив дворфів, чи не так?^Ти ніколи раніше не бачила дворфів, чи не так?"
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Krobus",
+            "Entries": {
+               "8": "Нещодавно закінчилася 1000-літня війна між моїм народом і дворфами. З обох сторін залишилося багато образ.",
+			   "15": "Будь ласка, бережи моє місцезнаходження в таємниці. Якби дворфи знали про мене, вони б неодмінно підіслали вбивцю."
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+               "Dwarf": "Дощ... Для нас це майже міт. Деякі з нас, дворфів, живуть все життя, так і не відчувши його на собі."
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Data/Boots",
+            "Entries": {
+               "853": "Cinderclown Shoes/Ці магічні туфлі належали знаменитому клоунові-дворфу./1000/6/5/15/Туфлі попелюклоуна"
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+               "Birdie1": "Ходять чутки, що дуже давно на цьому великому острові жила велика цивілізація дворфів.#$e#Ти був всередині вулкану? Там повно уламків їхніх дивних машин...^Ти була всередині вулкану? Там повно уламків їхніх дивних машин..."
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+               "Dwarf": "Кажеш, нагорі йде дощ? *позіхання*#$e#Дощ... Для нас це майже міт. Деякі з нас, дворфів, живуть все життя, так і не відчувши його на собі."
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Data/hats",
+            "Entries": {
+               "46": "Wearable Dwarf Helm/Трохи більша версія шоломів розміром з людину, які носили дворфи./hide/true/Носимий шолом дворфа"
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Entries": {
+               "Dwarvish Sentry": "300/18/0/0/true/0/60 .1 62 .1 64 .1 66 .1 68 .1 70 .1 72 .1/5/0/-1/3/.0/true/15/Дворфський вартовик"
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+               "Dwarf": "adult/neutral/outgoing/positive/undefined/not-datable/null/Other/summer 22//Mine 43 6/Дворф"
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Entries": {
+               "96": "Dwarf Scroll I/1/-300/Arch/Сувій дворфів I/Пожовклий сувій пергаменту, заповнений рукописами дворфів. Цей зв'язаний червоним бантиком.//Set Dwarf 96 97 98 99",
+			   "97": "Dwarf Scroll II/1/-300/Arch/Сувій дворфів II/Пожовклий сувій пергаменту, заповнений рукописами дворфів. Цей зв'язаний зеленою стрічкою.//Set Dwarf 96 97 98 99",
+			   "98": "Dwarf Scroll III/1/-300/Arch/Сувій дворфів III/Пожовклий сувій пергаменту, заповнений рукописами дворфів. Цей зв'язаний синьою мотузкою.//Set Dwarf 96 97 98 99",
+			   "99": "Dwarf Scroll IV/1/-300/Arch/Сувій дворфів IV/Пожовклий сувій пергаменту, заповнений рукописами дворфів. Цей зв'язаний золотим ланцюжком.//Set Dwarf 96 97 98 99",
+			   "112": "Rusty Cog/25/-300/Arch/Іржава шестерня/Добре збережена шестерня, яка напевно була частиною якоїсь старовинної машини. Це може бути дворфвською технологією./Mountain .05/Debris 1 20 4",
+			   "121": "Dwarvish Helm/100/-300/Arch/Дворфський шолом/Це один із шоломів, які зазвичай носять дворфи. Товсте металеве покриття захищає їх від падаючих уламків та сталактитів./UndergroundMine .01/Debris 1 50 0",
+			   "122": "Dwarf Gadget/200/-300/Arch/Пристрій дворфів/Це частина передової технології, яка колись була відома дворфам. Він досі блимає і гуде, але ви не можете зрозуміти, як він працює./UndergroundMine .001/Money 1 500",
+			   "326": "Dwarvish Translation Guide/50/-300/Crafting -8/Посібник з перекладу дворфської мови/Навчить вас дворфської.",
+			   "554": "Lemon Stone/200/-300/Minerals -12/Лемонстоун/Дехто стверджує, що порошкоподібний кристал - це делікатес дворфів."
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Data/SecretNotes",
+            "Entries": {
+               "1005": "День 23^^Місцевий вулкан таїть у собі багато таємниць.^^Я бачив маленьких чоловічків з осяйними очима, що бігали в темряві... як коти вночі.^^(Чи це можуть бути казкові дворфо-люди, про яких згадує М. Джаспер у своїх \"Знаменитих подорожах\"?)^^Дивні машини теж. Моторошні... не схожі ні на що відоме людині.^^Нагорі я знайшов прохід до жерла вулкана. І, наполовину занурену в бурхливу лаву, незвичну машину...  своєрідну \"кузню\". ^^Завтра я продовжу розслідування."
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Data/weapons",
+            "Entries": {
+               "54": "Dwarf Sword/Він стародавній, але лезо ніколи не тупиться./65/75/1/4/0/4/0/-1/-1/0/.02/3/Дворфський меч",
+			   "55": "Dwarf Hammer/Він видає дуже слабкий дзизкаючий звук./75/85/1/-8/0/2/2/-1/-1/0/.02/3/Дворфський молот",
+			   "56": "Dwarf Dagger/Він стародавній, але лезо ніколи не тупиться./32/38/1/3/0/6/1/-1/-1/0/.03/3/Дворфський кинджал"
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "Load",
+            "Target": "Data/MoviesReactions",
+            "FromFile": "assets/Content/{{Target}}.json",
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Strings/Locations",
+            "Entries": {
+               "Town_DwarfGrave_Translated": "     Ви перекладаєте з дворфської:     \n\nВстань між трьома стовпами барви золотої\nЗ дарунком, цінним неба всього:\nВеселки, викуваної землею, не морем\nЛиш тоді галактика прислухається до крику твого.\n"
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Strings/Notes",
+            "Entries": {
+               "11": "Таємниці дворфів\nДворфи називають себе \"Смолуану\"... що перекладається як \"небесний народ\". Дивна назва виду, який живе глибоко під землею, чи не так?\nЩе одна таємниця дворфів - це передова технологія, якою вони нібито володіють. Такі докази спонукали мене, наперекір глузуванням моїх колег, запропонувати нову теорію:\nЯ вважаю, що дворфи - це залишки колись розвиненої цивілізації, міжпланетний апарат якої давно розбився на цій планеті.\nЯ гадаю, щоб цей дворфський космічний корабель спустився глибоко під землю... і з часом дворфи пристосувалися до нового підземного середовища.\n Мої колеги запитують: \"Чому вони не піднялися над землею і не жили на поверхні?\"... Можливо, їхня давня планета мала більш щільну атмосферу, яка захищала їх від радіації зірок, і вони просто не могли вижити в нашому сонячному світлі.\n Це пояснює, чому вони з'являються лише вночі, щоб забрати з наших будинків те, що їм потрібно...\n\n-М. Джаспер"
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Strings/NPCNames",
+            "Entries": {
+               "Dwarf": "Дворф"
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+               "Game1.cs.3754": "Король дворфів",
+			   "SkillsPage.cs.11587": "Посібник з перекладу дворфської мови"
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		// TODO
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueKrobus",
+            "Entries": {
+               "Good_2": "Я навчився долати свої стереотипи щодо людей... але дворфи все ще відразливі для мене.$a"
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		// TODO
+		{
+            "LogName": "Translation of Dwarf",
+            "Action": "EditData",
+            "Target": "Data/Events/Sewer",
+            "Entries": {
+               "691039/f Dwarf 50/n CF_Sewer": "Overcast/16 13/farmer -1000 -1000 0 Dwarf 14 13 1 Krobus 18 13 3 Wizard -1000 -1000 2/skippable/pause 500/emote Dwarf 12/speak Dwarf \"Тінистий біля поверхні? Яка зухвалість!#$b#Твої істоти несли відповідальність за смерть усієї моєї родини.\"/move Krobus -1 0 3/emote Krobus 12/playSound shadowpeep/speak Krobus \"Якби ви, дворфи, не вигнали нас з нашої прабатьківщини, нам би не довелося цього робити!#$b#Мені шкода твоєї родини.\"/move Dwarf 1 0 1/speak Dwarf \"\"Мені шкода\" нічого не вирішить.\"/jump Dwarf/pause 500/animate Dwarf false true 50 4 5 6 7/jump Krobus/pause 500/animate Krobus false true 50 12 13 14 15/pause 1000/playSound throw/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/positionOffset Dwarf 4 0/positionOffset Krobus -4 0/pause 30/shake Dwarf 500/playSound clubhit/jump Krobus/pause 500/shake Krobus 500/playSound clubSmash/jump Dwarf/pause 500/shake Dwarf 250/pause 250/playSound hitEnemy/pause 250/shake Krobus 250/playSound shadowHit/pause 500/faceDirection farmer 0 true/animate farmer false true 500 13 14/warp farmer 16 9/playSound stoneStep/shake Dwarf 250/pause 250/playSound hitEnemy/pause 250/playSound stoneStep/positionOffset farmer 0 16/shake Krobus 250/playSound shadowHit/pause 500/playSound stoneStep/positionOffset farmer 0 16/shake Dwarf 250/pause 250/playSound hitEnemy/pause 250/positionOffset farmer 0 16/shake Krobus 250/playSound shadowHit/pause 500/playSound stoneStep/positionOffset farmer 0 16/shake Dwarf 250/pause 250/playSound hitEnemy/pause 250/playSound stoneStep/positionOffset farmer 0 16/shake Krobus 250/playSound shadowHit/pause 500/positionOffset farmer 0 16/shake Dwarf 250/pause 250/playSound hitEnemy/pause 250/playSound stoneStep/positionOffset farmer 0 16/shake Krobus 250/playSound shadowHit/pause 500/playSound stoneStep/positionOffset farmer 0 16/warp farmer 16 11/faceDirection farmer 2/pause 300/showFrame farmer 94/jump farmer/startJittering/pause 1000/stopJittering/speed farmer 6/showFrame 0/move farmer 0 2 2 true/pause 300/shake Dwarf 1000/shake Krobus 1000/playSound clubSmash/positionOffset Dwarf -16 0/positionOffset Krobus 16 0/pause 30/positionOffset Dwarf -16 0/positionOffset Krobus 16 0/pause 30/positionOffset Dwarf -16 0/positionOffset Krobus 16 0/pause 30/positionOffset Dwarf -16 0/positionOffset Krobus 16 0/pause 30/showFrame farmer 0/pause 500/faceDirection farmer 3/faceDirection farmer 1/faceDirection farmer 2/speak Dwarf \"Але я його таки вдарю! Він підлий.\"/speak Krobus \"Давай поглянемо, що ти вмієш, шмаркаче.\"/playMusic none/pause 1000/playSound wand/screenFlash 3/showFrame Wizard 16/warp Wizard 16 16/pause 2000/showFrame Wizard 0/pause 500/faceDirection Wizard 1 true/pause 50/faceDirection Wizard 0/pause 800/showFrame Wizard 17/screenFlash .35/playSound flameSpellHit/shake Wizard 500/specificTemporarySprite wizardSewerMagic/stopAnimation Krobus/stopAnimation Dwarf/faceDirection Krobus 2 true/faceDirection Dwarf 2 true/shake Krobus 1000/shake Dwarf 1000/pause 1000/speak Wizard \"Ви двоє! Заспокойтеся!\"/pause 500/showFrame Wizard 8/playSound dwop/pause 1000/playMusic Upper_Ambient/speak Wizard \"Війни стихій давно закінчились. У вас немає причин битися.#$b#Вам двом доведеться помиритися заради людей, які тут живуть. Думаю, ви це помітили.\"/pause 1000/faceDirection Dwarf 3 true/faceDirection Krobus 1 true/pause 500/emote Dwarf 40 true/emote Krobus 40 true/pause 3000/speak Dwarf \"Ну, відтепер я триматимусь подалі від цього місця.\"/faceDirection farmer 3/faceDirection Dwarf 1/pause 500/faceDirection farmer 1/pause 500/faceDirection Krobus 3/speak Krobus \"...І я справді вибачаюся за те, що сталося в минулому, Дворфе. Особисто з тобою у мене проблем немає.\"/pause 1000/faceDirection farmer 2 true/faceDirection Dwarf 2 true/faceDirection Krobus 2 true/pause 1000/speak Wizard \"Дуже добре. Я використаю на вас \"Печатку обіцянки\", щоб затвердити це перемир'я.\"/pause 1000/faceDirection Wizard 3 true/playSound dwop/pause 50/faceDirection Wizard 2/pause 1500/showFrame Wizard 16/playSound yoba/specificTemporarySprite WizardPromise/pause 3000/speed farmer 2/move farmer 0 -2 2/emote farmer 40/pause 800/end"
+           },
+            "When": { "Language": "uk", "DwarfTransaltion": "Dwarf", "ModStatus": "ON" }
+        },
+		
+		
+		// Time Format
+        {
+            "LogName": "Time Format (Strings)",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "DayTimeMoneyBox.cs.10370": "дп",
+                "DayTimeMoneyBox.cs.10371": "пп",
+                "MapPage.cs.11069": "Відчинено з 9:00 дп до 4:00 пп у більшість днів",
+                "MapPage.cs.11077": "Відчинена з 9:00 дп до 3:00 пп.",
+                "MapPage.cs.11080": "Відчинена з 9:00 дп до 5:00 пп (Зачинено в середу)",
+                "MapPage.cs.11082": "Відчинено з 9:00 дп до 4:00 пп.",
+                "MapPage.cs.11084": "Відчинено з 12:00 пп до 12:00 дп.",
+                "MapPage.cs.11087": "Відчинено з 8:00 дп до 6:00 пп.",
+                "MapPage.cs.11096": "Крамниця відчинена з 9:00 дп до 5:00 пп у більшість днів",
+                "MapPage.cs.11100": "Відчинено з 2:00 пп до 10:00 пп.",
+                "MovieTheater_Hours": "(Відчинено з 9:00 дп до 9:00 пп)",
+                "MapPage.cs.11106": "Відчинено з 9:00 дп до 11:00 пп.",
+                "MapPage.cs.11108": "Відчинено з 9:00 дп до 5:00 пп.",
+                "MapPage.cs.11108_newHours": "Відчинено з 8:00 дп до 5:00 пп."
+            },
+            "When": { "Language": "uk", "ModTimeFormat": "12Hours", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Time Format (Strings)",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Marnie",
+            "Entries": {
+                "winter_18.001": "Ми тут на візит о пів на першу дня."
+            },
+            "When": { "Language": "uk", "ModTimeFormat": "12Hours", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Time Format (Strings)",
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "Phone_Robin_Open": "Алло? Привіт! Так, я зараз відчинена... будь ласка, заходь до 5-ї години вечора, якщо тобі щось знадобиться! *клац* $h",
+                "Phone_Robin_Open_Rare": "Алло? О, привіт, @! *ГУРКІТ*... Гм, одну секунду... (Приглушений голос: Любий, чи не міг би ти зачинити двері? Я намагаюся займатися роботою.)... Вибач! Так, сьогодні я відчинена до 5-ї години вечора. Побачимось! *клац* ",
+                "Phone_Robin_Closed": "Привіт, це Робін. Мій графік роботи з 9-ї ранку до 5-ї години вечора. Будь ласка, приходь в зазначений час, якщо тобі щось знадобиться! *біп*",
+                "Phone_Clint_Open": "Алло? О, привіт, @. Так, я працюю до 4-ї години дня. Е... Добре. До побачення. *клац*",
+                "Phone_Clint_Open_Rare": "Привіт? Так, так, я відчинений до 4-ї години дня. Мені треба йти. *клац*^Алло? О... @... Твій голос звучить дуже приємно по телефону... О... Добре. Зрозумів. Я відчинений до 4-ї години дня. *грюкання*$4",
+                "Phone_Clint_Closed": "Ви зателефонували до автовідповідача Клінта. Я зараз недоступний... Мій графік роботи з 9-ї ранку до 4-ї години дня. *біп*",
+                "Phone_Pierre_Open": "Головна Крамниця У П'єра! О, привіт, @! Так, сьогодні я відчинений до 5-ї години вечора. Будь ласка, приходь за вигідними пропозиціями на насіння та іншу продукцію! До побачення. *клац*",
+                "Phone_Pierre_Open_Rare": "Абіґейл! Твоя морська свинка знову втекла! Приходь сюди *прямо зараз* і подбай про неї! $3#$b#Ой! Е... Привіт? Дякую, що зателефонував. Т... Так, ми працюємо до 5-ї години вечора. До побачення. *клац*$4^Ой! Е... Привіт? Дякую, що зателефонувала. Т... Так, ми працюємо до 5-ї години вечора. До побачення. *клац*$4",
+                "Phone_Pierre_Closed": "Дякуємо, що зателефонували до Головної Крамниці У П'єра. Зараз ми зачинені, але наш графік роботи з 9-ї ранку до 5-ї години вечора. Побачимось! *біп*",
+                "Phone_Gus_Closed_NoDishOfTheDay": "Привіт, це Ґас із салону \"Зорекрапля\". Зараз салун зачинений. Будь ласка, приходь між 12-ю дня та 12-ю годинами ночі, якщо хочеш трохи смачної їжі та напоїв. *біп*",
+                "Phone_Marnie_Open": "Алло? О, привіт, @! Так, моя крамниця сьогодні працює до 4-ї години дня. Сподіваюся, що скоро побачимось! *клац*",
+                "Phone_Marnie_Closed": "Вітаю, ви зателефонували до ранчо Марні. Мій графік роботи з 9-ї ранку до 4-ї години дня. Будь ласка, приходьте до мене в гості в зазначений час. *біп*"
+            },
+            "When": { "Language": "uk", "ModTimeFormat": "12Hours", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Time Format (Strings)",
+            "Action": "EditData",
+            "Target": "Strings/Locations",
+            "Entries": {
+                "BeachNightMarket_Closed": "Відкрито з 5:00 пп.",
+                "BeachNightMarket_GiftGiverClosed": "Купець: Нічний ринок відкривається о 5-й годині вечора... Приходьте тоді до мене за безкоштовною філіжанкою кави! ",
+                "Town_SeedShopSign": "- Крамниця У П'єра -\nТепер працює 7 днів на тиждень з 9:00 дп до 5:00 пп!"
+            },
+            "When": { "Language": "uk", "ModTimeFormat": "12Hours", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Time Format (Strings)",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "Town-Christmas.1": "Клініка - Графік роботи: з 9:00 дп до 3:00 пп.",
+                "Town-Christmas.4": " Археологічне бюро - Працює з 8:00 дп до 6:00 пп.",
+                "Town-EggFestival.1": "Клініка - Графік роботи: з 9:00 дп до 3:00 пп.",
+                "Town-EggFestival.4": " Археологічне бюро - Працює з 8:00 дп до 6:00 пп.",
+                "Town-Fair.3": "Клініка - Графік роботи: з 9:00 дп до 3:00 пп.",
+                "Town-Fair.8": " Археологічне бюро - Працює з 8:00 дп до 6:00 пп.",
+                "Town-Halloween.1": "Клініка - Графік роботи: з 9:00 дп до 3:00 пп.",
+                "Town-Halloween.4": " Археологічне бюро - Працює з 8:00 дп до 6:00 пп.",
+                "Town.1": "Клініка - Графік роботи: з 9:00 дп до 3:00 пп.",
+                "Town.2": "Головна крамниця працює з 9:00 дп до 5:00 пп. Зачинена на вихідний у середу",
+                "Town.5": " Археологічне бюро - Працює з 8:00 дп до 6:00 пп."
+            },
+            "When": { "Language": "uk", "ModTimeFormat": "12Hours", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Time Format (Data)",
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "winter_18": "Любий @,^Хочу розповісти тобі про майбутню подію: Свято зимової зорі. Настав час для громади, щоб зібратися разом і згадати про всі щасливі моменти, які ми мали цього року.^Улюбленою традицією є \"таємний обмін подарунками\", коли кожен у місті випадковим чином робить подарунок комусь іншому. У день свята кожен приносить своєму таємному другу подарунок і дивує чимось особливим! Цього року твоїм таємним другом буде:^    %secretsanta ^Нікому про це не кажи! Свято відбудеться 25 числа з 9-ї ранку до 2-ї години дня на міській площі. Побачимось! ^   -Мер Льюїс¦Люба @,^Хочу розповісти тобі про майбутню подію: Свято зимової зорі. Настав час для громади, щоб зібратися разом і згадати про всі щасливі моменти, які ми мали цього року.^Улюбленою традицією є \"таємний обмін подарунками\", коли кожен у місті випадковим чином робить подарунок комусь іншому. У день свята кожен приносить своєму таємному другу подарунок і дивує чимось особливим! Цього року твоїм таємним другом буде:^    %secretsanta ^Нікому про це не кажи! Свято відбудеться 25 числа з 9-ї ранку до 2-ї години дня на міській площі. Побачимось! ^   -Мер Льюїс[#]Секретний Санта",
+                "spring_12": "Любий @,^Завтра ми святкуємо Фестиваль яєць на міській площі. ^^Тобі варто прийти між 9-ю ранку та 2-ю годиною дня, якщо хочеш взяти участь.^Ти ж не хочеш пропустити щорічне полювання на яйця!^  -Мер Льюїс¦Любий @,^Завтра ми святкуємо Фестиваль яєць на міській площі. ^^Тобі варто прийти між 9-ю ранку та 2-ю годиною дня якщо хочеш взяти участь.^Ти ж не хочеш пропустити щорічне полювання на яйця!^  -Мер Льюїс[#]Повідомлення про Фестиваль яєць",
+                "spring_23": "Любий @,^Завтра ми всі збираємося на Квітковий танець.^^Якщо знайдеш собі партнера, можеш навіть сам взяти участь у танці!^За лісом на захід від міста є невелика галявина, де ми і проводимо танець. Приходь з 9-ї ранку до 2-ї дня, якщо тобі цікаво.^  -Мер Льюїс¦Люба @,^Завтра ми всі збираємося на Квітковий танець.^^Якщо знайдеш собі партнера, можеш навіть сама взяти участь у танці!^За лісом на захід від міста є невелика галявина, де ми і проводимо танець. Приходь з 9-ї ранку до 2-ї дня, якщо тобі цікаво.^  -Мер Льюїс[#]Повідомлення про Квітковий танець",
+                "summer_10": "Любий @,^Завтра ми всі збираємося на пляжі для щорічного Луау міста Пелікан.^^Родзинкою фестивалю є спільний суп. Не забудь принести щось смачненьке, щоб зробити свій внесок!^Сам губернатор бере участь у заході, тому поводься пристойно.^Приходь на пляж десь з 9-ї ранку до 2-ї години дня.^   -Мер Льюїс¦Люба @,^Завтра ми всі збираємося на пляжі для щорічного Луау міста Пелікан.^^Родзинкою фестивалю є спільний суп. Не забудь принести щось смачненьке, щоб зробити свій внесок!^Сам губернатор бере участь у заході, тому поводься пристойно.^Приходь на пляж десь з 9-ї ранку до 2-ї години дня.^   -Мер Льюїс[#]Повідомлення про Луалу",
+                "summer_28": "Любий @,^Сьогодні ввечері десь о 10-й годині вечора відбудеться рідкісна і красива подія.^^Місячні медузи пропливуть повз місто Пелікан у своїй довгій подорожі на південь на зиму.^^Ми всі збираємося на пляжі, щоб подивитися на це. Ти ж не хочеш таке пропустити!^Побачимось ввечері,^ -Деметріус¦Люба @,^Сьогодні ввечері о 10-й годині вечора відбудеться рідкісна і красива подія.^^Місячні медузи пропливуть повз місто Пелікан у своїй довгій подорожі на південь на зиму.^^Ми всі збираємося на пляжі, щоб подивитися на це. Ти ж не хочеш таке пропустити!^Побачимось ввечері,^ -Деметріус[#]Танець місячних медуз",
+                "fall_26": "Любий @,^Ти помітив прохолоду у повітрі? Це може бути просто наближення зими...^Або це можуть бути дії темних привидів, щоб допомогти нам відсвяткувати завтрашнє свято... Переддень усіх духів.^Приходь до міста о 10-й годині вечора, якщо хочеш взяти участь.^  -Мер Льюїс¦Люба @,^Ти помітила прохолоду у повітрі? Це може бути просто наближення зими...^Або це можуть бути дії темних привидів, щоб допомогти нам відсвяткувати завтрашнє свято... Переддень усіх духів.^Приходь до міста о 10-й годині вечора, якщо хочеш взяти участь.^  -Мер Льюїс[#]Повідомлення про Переддень усіх духів",
+                "winter_7": "Любий @,^Завтра ми всі збираємося перед будинком Марні на Фестиваль льоду.^^Це свято зими... Будуть сніговики, крижані скульптури та змагання з підлідної риболовлі!^Якщо хочеш взяти участь, приходь з 9-ї ранку до 2-ї години дня.^  -Мер Льюїс¦Люба @,^Завтра ми всі збираємося перед будинком Марні на Фестиваль льоду.^^Це свято зими... Будуть сніговики, крижані скульптури та змагання з підлідної риболовлі!^Якщо хочеш взяти участь, приходь з 9-ї ранку до 2-ї години дня.^  -Мер Льюїс[#]Повідомлення про Фестиваль льоду",
+                "winter_14": "Починаючи з завтрашнього дня, мандрівний торговий флот пристане до міста Пелікан для щорічного Нічного ринку.^^Ринок відкривається о 5-й годині вечора і триватиме на березі протягом наступних трьох днів.^^Приходь на пляж після 5-й вечора, якщо хочеш приєднатися до святкування. Є безплатна кава![#]Повідомлення про Нічний ринок",
+                "winter_24": "@,^Завтра Свято зимової зорі.^У тебе вже є подарунок для свого \"таємного друга\"... %secretsanta?^Свято розпочнеться о 9-й ранку на міській площі. Побачимось! ^   -Мер Льюїс[#]Нагадування про Свято зимової зорі",
+                "passedOut4": "@, ^^Я знайшов тебе обличчям в багнюці під час свого очищення о 3-й ночі.^^Наступного разу спробуй повернутися додому трохи раніше!^     -Марлон[#]Лист від Марлона",
+                "willyHours": "Хороші новини!^^Старий човен знову придатний для плавання, завдяки тобі!^^Заходь в задню кімнату, коли захочеш прокататися.^^Моя крамниця тепер працює щодня з 8-ї ранку, тож ти можеш розпочати рано.^^-Віллі[#]Човен Віллі"
+            },
+            "When": { "Language": "uk", "ModTimeFormat": "12Hours", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Time Format (Data)",
+            "Action": "EditData",
+            "Target": "Data/Quests",
+            "Entries": {
+                "13": "Basic/На пляж!/Хтось, на ім'я Віллі запросив вас відвідати пляж на південь від міста. Він каже, що має дещо для вас./Відвідайте пляж на південь від міста до 5-ї години вечора./-1/-1/0/-1/true",
+                "22": "Basic/Рибна запіканка/Джоді прийшла на ферму, щоб запросити вас на вечерю о 7-й годині вечора. Її єдине прохання полягало в тому, щоб ви принесли великоротого окуня для її рибної запіканки./Увійдіть о 7-й вечора до будинку Джоді з великоротим окунем./-1/-1/0/-1/true"
+            },
+            "When": { "Language": "uk", "ModTimeFormat": "12Hours", "ModStatus": "ON" }
+        },
+		// TODO
+        {
+            "LogName": "Time Format (Data)",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "93/f Jodi 1000/t 600 930/d Tue Wed Thu Fri Sat Sun": "continue/64 15/farmer 64 16 2 Jodi 64 18 0/pause 1500/addQuest 22/skippable/speak Jodi \"*хах*... Привіт, @! *задишка* Взбирання на ту гору було непоганим випробуванням.$h\"/pause 200/emote Jodi 28/pause 200/speak Jodi \"Так чи інакше... я прийшла запитати, чи не хочеш ти прийти сьогодні до нас на вечерю!#$b#Я не змушую... але якщо ти прийдеш, можеш принести окуня великоротого?#$b#Саме так. Одна з тих слизьких озерних риб. Мені потрібна одна для запіканки, яку я зроблю.$h#$b#Добре, що-ж... Вечеря буде у нас вдома о 6-й вечора... Не забудь принести окуня великоротого!\"/pause 300/end dialogue Jodi \"Рибні запіканки завжди чудові.\"",
+                "47/f Sam 2000/t 600 800/e 44": "continue/64 15/farmer 64 16 2 Sam 64 18 0/pause 1500/speak Sam \"Привіт, @. Вгадай що? Наш гурт гратиме концерт ввечері у місті Зузу!#$b#Зустрінемось на автобусній зупинці о 4-й годині дня, щоб поїхати на концерт. Тобі варто там бути!\"/pause 300/end dialogue Sam \"Я схвильований і знервований цим концертом. Сподіваюся, що все пройде добре.\"",
+                "55/f Leah 2000/t 600 800/z winter/n LeahArtShowSuggestion": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Привіт, @! У тебе нема планів на сьогоднішній вечір?#$b#Нарешті я зібралася, тому я сьогодні збираюся провести виставку своїх робіт в місті!$h#$b#Приходь у місто між 3-ю дня та 5-ю годиною вечора, якщо хочеш на них поглянути!\"/pause 300/end dialogue Leah \"Я трохи хвилююся...$l\"",
+                "91/f Marnie 750/t 600 930": "continue/64 15/farmer 64 16 2 Marnie 64 18 0/pause 1500/addQuest 21/skippable/speak Marnie \"Добридень, пане @!$h^Добридень, пані @!$h#$b#Я хотіла б щось запитати у тебе, оскільки я добре живу поруч з тобою.#$b#Бачиш як, я хочу навчити кіз казати \"Привіт\"... але вони не звертають уваги на мене, якщо я не маю їхнього улюбленого делікатесу - печерної моркви!$u#$b#Що-ж... через те, що я боюся шахти... я подумала, може, у вільний час ти зможеш принести її мені?#$b#Я не змушую... але, якщо хочеш, приходь у мій дім між 9-ю ранку і 6-ю годиною вечора з печерною морквою. Ти потішиш стареньку. Бувай.\"/pause 300/end dialogue Marnie \"Мої кози до жаху люблять печерну моркву... не розумію, чому.\""
+            },
+            "When": { "Language": "uk", "ModTimeFormat": "12Hours", "ModStatus": "ON" }
+        },
+		// TODO
+        {
+            "LogName": "Time Format (Characters)",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries": {
+                "summer_27": "Завтра ми всі збираємось на березі, щоб спостерігати, як місячні медузи мігрують. Ймовірно, це почнеться о 10-й годині вечора."
+            },
+            "When": { "Language": "uk", "ModTimeFormat": "12Hours", "ModStatus": "ON" }
+        },
+		
+		
+    // Android UI Translation
+       {
+            "LogName": "Time Format (Strings)",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "DayTimeMoneyBox.cs.10370": "дп",
+                "DayTimeMoneyBox.cs.10371": "пп",
+                "MapPage.cs.11069": "Відчинено з 9:00 дп до 4:00 пп у більшість днів",
+                "MapPage.cs.11077": "Відчинена з 9:00 дп до 3:00 пп.",
+                "MapPage.cs.11080": "Відчинена з 9:00 дп до 5:00 пп (Зачинено в середу)",
+                "MapPage.cs.11082": "Відчинено з 9:00 дп до 4:00 пп.",
+                "MapPage.cs.11084": "Відчинено з 12:00 пп до 12:00 дп.",
+                "MapPage.cs.11087": "Відчинено з 8:00 дп до 6:00 пп.",
+                "MapPage.cs.11096": "Крамниця відчинена з 9:00 дп до 5:00 пп у більшість днів",
+                "MapPage.cs.11100": "Відчинено з 2:00 пп до 10:00 пп.",
+                "MovieTheater_Hours": "(Відчинено з 9:00 дп до 9:00 пп)",
+                "MapPage.cs.11106": "Відчинено з 9:00 дп до 11:00 пп.",
+                "MapPage.cs.11108": "Відчинено з 9:00 дп до 5:00 пп.",
+                "MapPage.cs.11108_newHours": "Відчинено з 8:00 дп до 5:00 пп."
+            },
+            "When": { "Language": "uk", "ModCurrentOS": "Android", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Time Format (Strings)",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Marnie",
+            "Entries": {
+                "winter_18.001": "Ми тут на візит о пів на першу дня."
+            },
+            "When": { "Language": "uk", "ModCurrentOS": "Android", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Time Format (Strings)",
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "Phone_Robin_Open": "Алло? Привіт! Так, я зараз відчинена... будь ласка, заходь до 5-ї години вечора, якщо тобі щось знадобиться! *клац* $h",
+                "Phone_Robin_Open_Rare": "Алло? О, привіт, @! *ГУРКІТ*... Гм, одну секунду... (Приглушений голос: Любий, чи не міг би ти зачинити двері? Я намагаюся займатися роботою.)... Вибач! Так, сьогодні я відчинена до 5-ї години вечора. Побачимось! *клац* ",
+                "Phone_Robin_Closed": "Привіт, це Робін. Мій графік роботи з 9-ї ранку до 5-ї години вечора. Будь ласка, приходь в зазначений час, якщо тобі щось знадобиться! *біп*",
+                "Phone_Clint_Open": "Алло? О, привіт, @. Так, я працюю до 4-ї години дня. Е... Добре. До побачення. *клац*",
+                "Phone_Clint_Open_Rare": "Привіт? Так, так, я відчинений до 4-ї години дня. Мені треба йти. *клац*^Алло? О... @... Твій голос звучить дуже приємно по телефону... О... Добре. Зрозумів. Я відчинений до 4-ї години дня. *грюкання*$4",
+                "Phone_Clint_Closed": "Ви зателефонували до автовідповідача Клінта. Я зараз недоступний... Мій графік роботи з 9-ї ранку до 4-ї години дня. *біп*",
+                "Phone_Pierre_Open": "Головна Крамниця У П'єра! О, привіт, @! Так, сьогодні я відчинений до 5-ї години вечора. Будь ласка, приходь за вигідними пропозиціями на насіння та іншу продукцію! До побачення. *клац*",
+                "Phone_Pierre_Open_Rare": "Абіґейл! Твоя морська свинка знову втекла! Приходь сюди *прямо зараз* і подбай про неї! $3#$b#Ой! Е... Привіт? Дякую, що зателефонував. Т... Так, ми працюємо до 5-ї години вечора. До побачення. *клац*$4^Ой! Е... Привіт? Дякую, що зателефонувала. Т... Так, ми працюємо до 5-ї години вечора. До побачення. *клац*$4",
+                "Phone_Pierre_Closed": "Дякуємо, що зателефонували до Головної Крамниці У П'єра. Зараз ми зачинені, але наш графік роботи з 9-ї ранку до 5-ї години вечора. Побачимось! *біп*",
+                "Phone_Gus_Closed_NoDishOfTheDay": "Привіт, це Ґас із салону \"Зорекрапля\". Зараз салун зачинений. Будь ласка, приходь між 12-ю дня та 12-ю годинами ночі, якщо хочеш трохи смачної їжі та напоїв. *біп*",
+                "Phone_Marnie_Open": "Алло? О, привіт, @! Так, моя крамниця сьогодні працює до 4-ї години дня. Сподіваюся, що скоро побачимось! *клац*",
+                "Phone_Marnie_Closed": "Вітаю, ви зателефонували до ранчо Марні. Мій графік роботи з 9-ї ранку до 4-ї години дня. Будь ласка, приходьте до мене в гості в зазначений час. *біп*"
+            },
+            "When": { "Language": "uk", "ModCurrentOS": "Android", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Time Format (Strings)",
+            "Action": "EditData",
+            "Target": "Strings/Locations",
+            "Entries": {
+                "BeachNightMarket_Closed": "Відкрито з 5:00 пп.",
+                "BeachNightMarket_GiftGiverClosed": "Купець: Нічний ринок відкривається о 5-й годині вечора... Приходьте тоді до мене за безкоштовною філіжанкою кави! ",
+                "Town_SeedShopSign": "- Крамниця У П'єра -\nТепер працює 7 днів на тиждень з 9:00 дп до 5:00 пп!"
+            },
+            "When": { "Language": "uk", "ModCurrentOS": "Android", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Time Format (Strings)",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "Town-Christmas.1": "Клініка - Графік роботи: з 9:00 дп до 3:00 пп.",
+                "Town-Christmas.4": " Археологічне бюро - Працює з 8:00 дп до 6:00 пп.",
+                "Town-EggFestival.1": "Клініка - Графік роботи: з 9:00 дп до 3:00 пп.",
+                "Town-EggFestival.4": " Археологічне бюро - Працює з 8:00 дп до 6:00 пп.",
+                "Town-Fair.3": "Клініка - Графік роботи: з 9:00 дп до 3:00 пп.",
+                "Town-Fair.8": " Археологічне бюро - Працює з 8:00 дп до 6:00 пп.",
+                "Town-Halloween.1": "Клініка - Графік роботи: з 9:00 дп до 3:00 пп.",
+                "Town-Halloween.4": " Археологічне бюро - Працює з 8:00 дп до 6:00 пп.",
+                "Town.1": "Клініка - Графік роботи: з 9:00 дп до 3:00 пп.",
+                "Town.2": "Головна крамниця працює з 9:00 дп до 5:00 пп. Зачинена на вихідний у середу",
+                "Town.5": " Археологічне бюро - Працює з 8:00 дп до 6:00 пп."
+            },
+            "When": { "Language": "uk", "ModCurrentOS": "Android", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Time Format (Data)",
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "winter_18": "Любий @,^Хочу розповісти тобі про майбутню подію: Свято зимової зорі. Настав час для громади, щоб зібратися разом і згадати про всі щасливі моменти, які ми мали цього року.^Улюбленою традицією є \"таємний обмін подарунками\", коли кожен у місті випадковим чином робить подарунок комусь іншому. У день свята кожен приносить своєму таємному другу подарунок і дивує чимось особливим! Цього року твоїм таємним другом буде:^    %secretsanta ^Нікому про це не кажи! Свято відбудеться 25 числа з 9-ї ранку до 2-ї години дня на міській площі. Побачимось! ^   -Мер Льюїс¦Люба @,^Хочу розповісти тобі про майбутню подію: Свято зимової зорі. Настав час для громади, щоб зібратися разом і згадати про всі щасливі моменти, які ми мали цього року.^Улюбленою традицією є \"таємний обмін подарунками\", коли кожен у місті випадковим чином робить подарунок комусь іншому. У день свята кожен приносить своєму таємному другу подарунок і дивує чимось особливим! Цього року твоїм таємним другом буде:^    %secretsanta ^Нікому про це не кажи! Свято відбудеться 25 числа з 9-ї ранку до 2-ї години дня на міській площі. Побачимось! ^   -Мер Льюїс[#]Секретний Санта",
+                "spring_12": "Любий @,^Завтра ми святкуємо Фестиваль яєць на міській площі. ^^Тобі варто прийти між 9-ю ранку та 2-ю годиною дня, якщо хочеш взяти участь.^Ти ж не хочеш пропустити щорічне полювання на яйця!^  -Мер Льюїс¦Любий @,^Завтра ми святкуємо Фестиваль яєць на міській площі. ^^Тобі варто прийти між 9-ю ранку та 2-ю годиною дня якщо хочеш взяти участь.^Ти ж не хочеш пропустити щорічне полювання на яйця!^  -Мер Льюїс[#]Повідомлення про Фестиваль яєць",
+                "spring_23": "Любий @,^Завтра ми всі збираємося на Квітковий танець.^^Якщо знайдеш собі партнера, можеш навіть сам взяти участь у танці!^За лісом на захід від міста є невелика галявина, де ми і проводимо танець. Приходь з 9-ї ранку до 2-ї дня, якщо тобі цікаво.^  -Мер Льюїс¦Люба @,^Завтра ми всі збираємося на Квітковий танець.^^Якщо знайдеш собі партнера, можеш навіть сама взяти участь у танці!^За лісом на захід від міста є невелика галявина, де ми і проводимо танець. Приходь з 9-ї ранку до 2-ї дня, якщо тобі цікаво.^  -Мер Льюїс[#]Повідомлення про Квітковий танець",
+                "summer_10": "Любий @,^Завтра ми всі збираємося на пляжі для щорічного Луау міста Пелікан.^^Родзинкою фестивалю є спільний суп. Не забудь принести щось смачненьке, щоб зробити свій внесок!^Сам губернатор бере участь у заході, тому поводься пристойно.^Приходь на пляж десь з 9-ї ранку до 2-ї години дня.^   -Мер Льюїс¦Люба @,^Завтра ми всі збираємося на пляжі для щорічного Луау міста Пелікан.^^Родзинкою фестивалю є спільний суп. Не забудь принести щось смачненьке, щоб зробити свій внесок!^Сам губернатор бере участь у заході, тому поводься пристойно.^Приходь на пляж десь з 9-ї ранку до 2-ї години дня.^   -Мер Льюїс[#]Повідомлення про Луалу",
+                "summer_28": "Любий @,^Сьогодні ввечері десь о 10-й годині вечора відбудеться рідкісна і красива подія.^^Місячні медузи пропливуть повз місто Пелікан у своїй довгій подорожі на південь на зиму.^^Ми всі збираємося на пляжі, щоб подивитися на це. Ти ж не хочеш таке пропустити!^Побачимось ввечері,^ -Деметріус¦Люба @,^Сьогодні ввечері о 10-й годині вечора відбудеться рідкісна і красива подія.^^Місячні медузи пропливуть повз місто Пелікан у своїй довгій подорожі на південь на зиму.^^Ми всі збираємося на пляжі, щоб подивитися на це. Ти ж не хочеш таке пропустити!^Побачимось ввечері,^ -Деметріус[#]Танець місячних медуз",
+                "fall_26": "Любий @,^Ти помітив прохолоду у повітрі? Це може бути просто наближення зими...^Або це можуть бути дії темних привидів, щоб допомогти нам відсвяткувати завтрашнє свято... Переддень усіх духів.^Приходь до міста о 10-й годині вечора, якщо хочеш взяти участь.^  -Мер Льюїс¦Люба @,^Ти помітила прохолоду у повітрі? Це може бути просто наближення зими...^Або це можуть бути дії темних привидів, щоб допомогти нам відсвяткувати завтрашнє свято... Переддень усіх духів.^Приходь до міста о 10-й годині вечора, якщо хочеш взяти участь.^  -Мер Льюїс[#]Повідомлення про Переддень усіх духів",
+                "winter_7": "Любий @,^Завтра ми всі збираємося перед будинком Марні на Фестиваль льоду.^^Це свято зими... Будуть сніговики, крижані скульптури та змагання з підлідної риболовлі!^Якщо хочеш взяти участь, приходь з 9-ї ранку до 2-ї години дня.^  -Мер Льюїс¦Люба @,^Завтра ми всі збираємося перед будинком Марні на Фестиваль льоду.^^Це свято зими... Будуть сніговики, крижані скульптури та змагання з підлідної риболовлі!^Якщо хочеш взяти участь, приходь з 9-ї ранку до 2-ї години дня.^  -Мер Льюїс[#]Повідомлення про Фестиваль льоду",
+                "winter_14": "Починаючи з завтрашнього дня, мандрівний торговий флот пристане до міста Пелікан для щорічного Нічного ринку.^^Ринок відкривається о 5-й годині вечора і триватиме на березі протягом наступних трьох днів.^^Приходь на пляж після 5-й вечора, якщо хочеш приєднатися до святкування. Є безплатна кава![#]Повідомлення про Нічний ринок",
+                "winter_24": "@,^Завтра Свято зимової зорі.^У тебе вже є подарунок для свого \"таємного друга\"... %secretsanta?^Свято розпочнеться о 9-й ранку на міській площі. Побачимось! ^   -Мер Льюїс[#]Нагадування про Свято зимової зорі",
+                "passedOut4": "@, ^^Я знайшов тебе обличчям в багнюці під час свого очищення о 3-й ночі.^^Наступного разу спробуй повернутися додому трохи раніше!^     -Марлон[#]Лист від Марлона",
+                "willyHours": "Хороші новини!^^Старий човен знову придатний для плавання, завдяки тобі!^^Заходь в задню кімнату, коли захочеш прокататися.^^Моя крамниця тепер працює щодня з 8-ї ранку, тож ти можеш розпочати рано.^^-Віллі[#]Човен Віллі"
+            },
+            "When": { "Language": "uk", "ModCurrentOS": "Android", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Time Format (Data)",
+            "Action": "EditData",
+            "Target": "Data/Quests",
+            "Entries": {
+                "13": "Basic/На пляж!/Хтось на ім'я Віллі запросив вас відвідати пляж на південь від міста. Він каже, що має дещо для вас./Відвідайте пляж на південь від міста до 5-ї години вечора./-1/-1/0/-1/true",
+                "22": "Basic/Рибна запіканка/Джоді прийшла на ферму, щоб запросити вас на вечерю о 7-й годині вечора. Її єдине прохання полягало в тому, щоб ви принесли великоротого окуня для її рибної запіканки./Увійдіть о 7-й вечора до будинку Джоді з великоротим окунем./-1/-1/0/-1/true"
+            },
+            "When": { "Language": "uk", "ModCurrentOS": "Android", "ModStatus": "ON" }
+        },
+		// TODO
+        {
+            "LogName": "Time Format (Data)",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "93/f Jodi 1000/t 600 930/d Tue Wed Thu Fri Sat Sun": "continue/64 15/farmer 64 16 2 Jodi 64 18 0/pause 1500/addQuest 22/skippable/speak Jodi \"*хах*... Привіт, @! *задишка* Взбирання на ту гору було непоганим випробуванням.$h\"/pause 200/emote Jodi 28/pause 200/speak Jodi \"Так чи інакше... я прийшла запитати, чи не хочеш ти прийти сьогодні до нас на вечерю!#$b#Я не змушую... але якщо ти прийдеш, можеш принести окуня великоротого?#$b#Саме так. Одна з тих слизьких озерних риб. Мені потрібна одна для запіканки, яку я зроблю.$h#$b#Добре, що-ж... Вечеря буде у нас вдома о 6-й вечора... Не забудь принести окуня великоротого!\"/pause 300/end dialogue Jodi \"Рибні запіканки завжди чудові.\"",
+                "47/f Sam 2000/t 600 800/e 44": "continue/64 15/farmer 64 16 2 Sam 64 18 0/pause 1500/speak Sam \"Привіт, @. Вгадай що? Наш гурт гратиме концерт ввечері у місті Зузу!#$b#Зустрінемось на автобусній зупинці о 4-й годині дня, щоб поїхати на концерт. Тобі варто там бути!\"/pause 300/end dialogue Sam \"Я схвильований і знервований цим концертом. Сподіваюся, що все пройде добре.\"",
+                "55/f Leah 2000/t 600 800/z winter/n LeahArtShowSuggestion": "continue/64 15/farmer 64 16 2 Leah 64 18 0/pause 1500/speak Leah \"Привіт, @! У тебе нема планів на сьогоднішній вечір?#$b#Нарешті я зібралася, тому я сьогодні збираюся провести виставку своїх робіт в місті!$h#$b#Приходь у місто між 3-ю дня та 5-ю годиною вечора, якщо хочеш на них поглянути!\"/pause 300/end dialogue Leah \"Я трохи хвилююся...$l\"",
+                "91/f Marnie 750/t 600 930": "continue/64 15/farmer 64 16 2 Marnie 64 18 0/pause 1500/addQuest 21/skippable/speak Marnie \"Добридень, пане @!$h^Добридень, пані @!$h#$b#Я хотіла б щось запитати у тебе, оскільки я добре живу поруч з тобою.#$b#Бачиш як, я хочу навчити кіз казати \"Привіт\"... але вони не звертають уваги на мене, якщо я не маю їхнього улюбленого делікатесу - печерної моркви!$u#$b#Що-ж... через те, що я боюся шахти... я подумала, може, у вільний час ти зможеш принести її мені?#$b#Я не змушую... але, якщо хочеш, приходь у мій дім між 9-ю ранку і 6-ю годиною вечора з печерною морквою. Ти потішиш стареньку. Бувай.\"/pause 300/end dialogue Marnie \"Мої кози до жаху люблять печерну моркву... не розумію, чому.\""
+            },
+            "When": { "Language": "uk", "ModCurrentOS": "Android", "ModStatus": "ON" }
+        },
+		// TODO
+        {
+            "LogName": "Time Format (Characters)",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries": {
+                "summer_27": "Завтра ми всі збираємось на березі, щоб спостерігати, як місячні медузи мігрують. Ймовірно, це почнеться о 10-й годині вечора."
+            },
+            "When": { "Language": "uk", "ModCurrentOS": "Android", "ModStatus": "ON" }
+        },
+        {
+            "LogName": "Android UI Strings",
+            "Action": "EditData",
+            "Target": "Strings/UI",
+            "Entries": {
+                "Character_EyeColor.mobile": "Колір \nочей",
+                "Character_HairColor.mobile": "Колір\nвол-ся",
+                "Character_PantsColor.mobile": "Колір\nштанів",
+                "Character_ShirtColor.mobile": "Колір\nсорочки",
+				"Carpenter_Upgrade.mobile": "Розширити будівлю",
+                "About_Credit_Mobile": "^= Розробник: ConcernedApe\n< Видавець: Chucklefish\n= Порт: Sickhead Games\n< Локалізація: Playism & Localize Direct\n= Українізація: Pereclaw\n< Мобільна версія - The Secret Police",
+                "mobile_options_vertical_toolbar": "Вертикальна панель інструментів",
+                "mobile_options_menu_side_margin": "Ширина меню",
+                "mobile_options_toolbar_padding": "Ширина панелі інструментів",
+                "mobile_button_craft": "Створити",
+                "shippingInstructionText": "Завантажте сюди предмети, щоб надіслати їх на продаж.",
+                "animalText": "Уподобання:",
+                "tutorialWant": "Ввімкнути туторіал?",
+                "tutorialYes": "Так, будь ласка. Я новачок у Stardew Valley на своєму смартфоні.",
+                "tutorialNo": "Ні, дякую, я вже знаю, як грати у Stardew Valley.",
+                "tutorial1": "Спочатку давайте виберемо зовнішній вигляд та тип ферми. Коли ви закінчите, натисніть кнопку, щоб почати гру.",
+                "tutorial2": "Добридень! Не забудьте піти додому на ферму, лягти спати і зберегти свою гру пізніше!",
+                "tutorial3": "Ви отримали подарунок! Натисніть на пакет, щоб відкрити його!",
+                "tutorial4": "Нові завдання відображаються в Щоденнику. Виберіть завдання, щоб детальніше ознайомитися - є корисна інформація!",
+                "tutorial5": "Коли ви закінчите роботу з Щоденником, натисніть \"Закрити\".",
+                "tutorial6": "Це схоже на безлад! Давайте приберемо це місце.",
+                "tutorial7": "Торкніться бур'яна, щоб знищити його.",
+                "tutorial8": "Чудова робота! Спробуйте знищити ще деякі бур'яни та камені!",
+                "tutorial9": "За допомогою мотики можна підготувати ґрунт до посадки.",
+                "tutorial10": "Постарайтеся підготувати місце до посіву перших насінь.",
+                "tutorial11": "Чудова робота... пора додати трохи насіння?",
+                "tutorial12": "Вони виглядають спраглими - на панелі інструментів є лійка.",
+                "tutorial13": "Гарна робота! Не забудьте поливати свої культури кожного дня.",
+                "tutorial14": "Коли ви закінчите полив, ми запрошуємо вас оглянути місто Пелікан і познайомитися з вашими новими сусідами!",
+                "tutorial15": "Лійку можна наповнити з водойми або з річки.",
+                "tutorial16": "Торкніться і утримуйте, щоб рухатися до вказівки.",
+                "tutorial17": "Утримуйте і перетягніть, щоб слідувати за вказівкою.",
+                "tutorial18": "Давайте розглянемо деякі інші особливості гри.",
+                "tutorial19": "В інвентарі відображаються предмети, які у вас є. Ви можете перетягнути їх, щоб перемістити їх або кинути до смітнику.",
+                "tutorial20": "На цій сторінці показані ваші навички - ви можете вдосконалити їх за допомогою інструментів, риболовлі та боротьби.",
+                "tutorial21": "Соціальна сторінка - це стосунки з людьми, яких ви зустрічаєте.",
+                "tutorial22": "Тут ви можете створювати нові речі з речей, які ви збираєте. Протягом гри ви відкриєте для себе нові рецепти.",
+                "tutorial23": "Проведіть вказівкою на мапі, щоб дослідити місто Пелікан та його околиці.",
+                "tutorial24": "Сторінка колекцій відстежує те, що ви надіслали, спіймали, видобули, приготували чи виявили.",
+                "tutorial25": "У крамницях торкніться прилавка перед продавцем, щоб купити чи продати товари.",
+                "tutorial26": "Нам потрібно трохи насіння для посадки... ви щось пропустили на фермі?",
+                "confirmExit": "Ви впевнені, що хочете вийти і втратити прогрес з початку цього ігрового дня?",
+                "mobile_options_auto_attack": "Автоматична атака",
+                "mobile_options_green_squares": "Вказівка розміщення предметів",
+                "tutorial_auto_attack": "На екрані параметрів гри ви можете вибрати автоматичний та ручний режими атаки.",
+                "question_auto_attack": "Шахти - небезпечне місце, і вам може знадобитися вплутатися в бійку. Ви хочете включити функцію автоматичної атаки, щоб полегшити боротьбу з монстрами?",
+                "question_restore_backup": "Відновити останню гру?",
+                "mobile_options_bigger_numbers": "Більший шрифт для чисел",
+                "mobile_options_auto_save": "Автозбереження",
+                "save_backup": "Зберегти прогрес",
+                "swap_saves": "Замінити на попереднє збереження",
+                "control_method_tap_to_move": "Торкнутися, щоб переміститись + Автоматична атака",
+                "control_method_attack_joystick": "Торкнутися, щоб переміститись + Атака джойстиком",
+                "control_method_invis_2": "Невидимий джойстик + 2 кнопки",
+                "control_method_invis_1": "Невидимий джойстик + 1 кнопка",
+                "control_method_joystick_buttons": "Торкнутися, щоб переміститись + джойстик + кнопки",
+                "control_method_joystick_buttons_no_tap_to_move": "Джойстик + кнопки",
+                "control_method_joystick_buttons_b": "Торкнутися, щоб переміститись + (джойстик + кнопки) (зброя)",
+                "control_method_joystick_buttons_c": "Торкнутися, щоб переміститись + Джойстик + (Кнопки) (зброя)",
+                "control_method_joystick": "Торкнутися, щоб переміститись + Джойстик",
+                "show_controls_toggle_button": "Показати кнопку перемикання управління",
+                "button_diameter": "Діаметр кнопки",
+                "button_alpha": "Прозорість кнопки",
+                "adjust_joypad_controls": "Налаштувати управління",
+                "invisible_button_width": "Ширина невидимої кнопки",
+                "Default": "За замовчуванням",
+                "pinch_zoom": "Збільшити/Зменшити, натискаючи",
+                "store_demo": "Ця версія гри Stardew Valley була створена спеціально для демонстраційних цілей.",
+                "permissions_info": "Читання/Запис на зовнішній носій інформації потрібно для збереження гри та увімкнення передачі збережених даних на/та з інших платформ. Будь ласка, надайте дозвіл, якщо хочете грати.",
+                "permissions_manual_set": "Перейдіть у Налаштування смартфона> Додатки> Stardew Valley> Дозволи та увімкніть внутрішню пам'ять для гри.",
+                "mobile_options_toolbar_slot_size": "Розмір панелі інструментів",
+                "mobile_options_date_time_size": "Розмір годинника із датою",
+                "please_wait": "Будь ласка, зачекайте...",
+                "save_error": "Помилка збереження",
+                "show_camerabutton": "Показати кнопку камери",
+                "save_version_incompatible": "Це збереження є несумісним з цією версією Stardew Valley. Оновіть версію гри, коли оновлення 1.5 стане доступним для вашого пристрою.",
+                "select_building": "Виберіть будівлю",
+                "android_storage_migration": "Stardew Valley потребує одноразового копіювання ваших ферм на нове місце для оновлення гри 1.5.\n\t  \nНа наступному екрані виберіть теку `StardewValley` і натисніть 'Використовувати цю папку'.",
+                "mobile_options_larger_font": "Викор. більший шрифт підказки"
+            },
+            "When": { "Language": "uk", "ModStatus": "ON", "ModCurrentOS": "Android" }
+        },
+		
+		
+		
+	// Other Mods Compatibility
+	
+	
+	    // Ridgeside Village Compatibility
+		{
+            "LogName": "Ridgeside Village Compatibility",
+            "Action": "EditData",
+            "Target": "Strings/NPCNames",
+            "Entries": {
+               "Aguar": "Містер Аґуар",
+               "Alissa": "Аліса",
+               "Bert": "Берт",
+               "Corine": "Корайн",
+               "Ezekiel": "Езакіель",
+               "Flor": "Флор",
+               "Freddie": "Фреді",
+               "Ian": "Айан",
+               "Jio": "Джіо",
+               "Jeric": "Джерік",
+               "Keahi": "Кеяхі",
+               "Kenneth": "Кенет",
+               "Kiwi": "Ківі",
+               "Lenny": "Ленні",
+               "Lola": "Лола",
+               "Maddie": "Медді",
+               "Olga": "Ольга",
+               "Philip": "Філіп",
+               "Pika": "Піка",
+               "Richard": "Річард",
+               "Shiro": "Шіро",
+               "Trinnie": "Тріні",
+               "Ysabelle": "Ізабелла",
+               "Yuuma": "Юма",
+               "Undreya": "Андреа",
+               "Helen": "Єлена"
+            },
+            "When": { "Language": "uk", "HasMod: |contains=Rafseazz.RidgesideMobileCP": true, "ModStatus": "ON" }
+        },
+		
+		
+		// Overgrown Flowery Interface Compatibility
+	    {
+            "Action": "Load",
+            "LogName": "Overgrown Flowery Interface Mod Compatibility",
+            "Target": "{{InternalAssetKey: assets/Button}}",
+            "FromFile": "compat/OvergrownFloweryInterface/assets/Button.png",
+            "When": { "HasMod: |contains=Maraluna.OvergrownFloweryInterface": true, "ModStatus": "ON" }
+        }
+    ]
+}

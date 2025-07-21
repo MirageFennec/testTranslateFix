@@ -1,0 +1,13 @@
+{
+  "Name": "[CP] Ukrainizacija | Ukrainian localization",
+  "Author": "Pereclaw",
+  "Version": "1.5.11",
+  "MinimumApiVersion": "3.15.0",
+  "Description": "Ukrainian localization for Stardew Valley by Pereclaw.",
+  "UniqueID": "Pereclaw.ukrainizacija",
+  "UpdateKeys": [ "Nexus:8427" ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "1.27.1"
+  }
+}

@@ -1,0 +1,55 @@
+{
+    /*********
+    ** Generic Mod Config Menu UI
+    *********/
+
+    // Mods Name
+    "config.title": "Налаштування Українізації",
+
+    // Mod's Sections
+    "config.section.Appearance.name": "Зовнішність",
+    "config.section.Behavior.name": "Поведінка моду",
+
+    // Time Format
+    "config.ModTimeFormat.name": "Формат часу в грі",
+    "config.ModTimeFormat.description": "Зміна формату часу в грі на 12-ти або 24-х годинний (за замовчуванням - 24-х годинний)",
+    "config.ModTimeFormat.values.24Hours": "24-х годинний",
+    "config.ModTimeFormat.values.12Hours": "12-ти годинний",
+	
+	// Localized Textures
+	"config.ModLocalizedTextures.name": "Локалізовані текстури",
+	"config.ModLocalizedTextures.description": "Вимкнення або ввімкнення локалізованих текстур у грі (за замовчуванням - увімкнено)",
+	
+    // Fonts
+    "config.ModFont.name": "Шрифт",
+	"config.ModFont.description": "Зміна шрифта в грі на новий або старий (за замовчуванням - новий)",
+	"config.ModFont.values.New": "Новий",
+	"config.ModFont.values.Mixed1": "Змішаний #1",
+	"config.ModFont.values.Mixed2": "Змішаний #2",
+	"config.ModFont.values.Old": "Старий",
+	"config.ModFont.values.SegoePrint": "Segoe Print",
+	
+	// Dwarf or Karlyk
+	"config.DwarfTransaltion.name": "Переклад слова \"Dwarf\"",
+	"config.DwarfTransaltion.description": "Слово, що використовуватиме гра на позначення англійського \"Dwarf\" (за замовчуванням - \"Карлик\")",
+	"config.DwarfTransaltion.values.Karlyk": "Карлик",
+	"config.DwarfTransaltion.values.Dwarf": "Дворф",
+	
+    // Mod Current OS
+    "config.ModCurrentOS.name": "Режим системи моду",
+    "config.ModCurrentOS.description": "Зміна режиму моду для роботи на системі Android або на комп'ютері (Windows, MacOS та Linux) (за замовчуванням - для комп'ютера)",
+    "config.ModCurrentOS.values.Android": "Android",
+    "config.ModCurrentOS.values.PC": "Комп'ютер",
+
+    // Mod Status
+    "config.ModStatus.name": "Статус моду",
+    "config.ModStatus.description": "Зміна статусу моду - увімкнення або вимкнення для роботи інших мовних модів (за замовчуванням - увімкнено)",
+    "config.ModStatus.values.ON": "Увімкнений",
+    "config.ModStatus.values.OFF": "Вимкнений",
+	
+	// Custom Achievements
+	"ach_beatthetranslatedgame": "Кінець гри?",
+	"ach_stardewukrtranslationdiscovered": "Долина Зоряної Роси",
+	"ach_beatthetranslatedgame_description": "Пройдіть гру повністю з Українізацією.\n\n(Danielle Tlumach: Я вражена!)",
+	"ach_stardewukrtranslationdiscovered_description": "Зіграй в Stardew Valley з Українізацією"
+}
