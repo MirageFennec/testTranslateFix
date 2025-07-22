@@ -384,7 +384,7 @@
         {
             "LogName": "Various Data",
             "Action": "Load",
-            "Target": "Data/Achievements, Data/BigCraftablesInformation, Data/Blueprints, Data/Boots, Data/ClothingInformation, Data/Concessions, Data/CookingRecipes, Data/CraftingRecipes, Data/EngagementDialogue, Data/ExtraDialogue, Data/FarmAnimals, Data/Fish, Data/Furniture, Data/hats, Data/mail, Data/Monsters, Data/Movies, Data/NPCDispositions, Data/NPCGiftTastes, Data/ObjectInformation, Data/PaintData, Data/Quests, Data/SecretNotes, Data/weapons",
+            "Target": "Data/Achievements, Data/BigCraftables, Data/Blueprints, Data/Boots, Data/ClothingInformation, Data/Concessions, Data/CookingRecipes, Data/CraftingRecipes, Data/EngagementDialogue, Data/ExtraDialogue, Data/FarmAnimals, Data/Fish, Data/Furniture, Data/hats, Data/mail, Data/Monsters, Data/Movies, Data/NPCDispositions, Data/NPCGiftTastes, Data/ObjectInformation, Data/PaintData, Data/Quests, Data/SecretNotes, Data/weapons",
             "FromFile": "assets/{{Target}}.json",
             "When": { "Language": "uk", "ModStatus": "ON" }
         },
